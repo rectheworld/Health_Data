@@ -1,0 +1,43 @@
+# Read Me 
+
+
+## Summary
+JSON Data, why Can't it be a CSV? 
+
+
+health_data_utilites 
+-------------------------------------------------------------
+get_provider_urls
+    - Returns a list of provider urls under and index url 
+    
+get_json
+    - extracts json from a url
+
+get_json_via_ijson
+    - creates an ijson parser object from a url 
+
+get_unquie_keys
+    - Idenifies if the first 15 objects in a json object have the same keys 
+
+
+parsers
+-------------------------------------------------------------
+
+*NOTE*  prefered parser is regular_expression_parse
+
+regular_expression_parse
+	- Uses reglar expression to parse a provider json url and write it to a csv 
+
+ijson_parse
+	- uses ijson to parse a provider url and write it to a csv 
+
+write_to_csv
+    - Helper funtion to the regular_expression_parse function 
+        - refomates a dataframe for a csv format 
+
+
+
+provider_classes
+----------------------------------------------------------------
+
+These classes used in the ijson_parse to store values and write them to a csv file 
